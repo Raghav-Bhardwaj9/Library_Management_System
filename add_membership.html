@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Membership</title>
+</head>
+<body>
+    <h1>Add Membership</h1>
+    <form action="/add_membership" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="duration">Duration:</label><br>
+        <select id="duration" name="duration">
+            <option value="6 months" selected>6 months</option>
+            <option value="1 year">1 year</option>
+            <option value="2 years">2 years</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
